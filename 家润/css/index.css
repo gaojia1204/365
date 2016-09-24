@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body,
+html {
+  font-family: "微软雅黑";
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: '';
+  height: 0;
+  overflow: hidden;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+#main {
+  overflow: hidden;
+}
+#TXbanner {
+  width: 800px;
+  height: 330px;
+  overflow: hidden;
+  margin-left: 210px;
+  float: left;
+}
+#center {
+  width: 800px;
+  height: 330px;
+  position: relative;
+}
+#center ul {
+  width: 800px;
+  height: 330px;
+}
+#center ul li {
+  width: 800px;
+  height: 330px;
+}
+#center ul li > a > img {
+  display: block;
+}
+#center .btn {
+  display: none;
+  position: absolute;
+  width: 46px;
+  height: 70px;
+  top: 110px;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  line-height: 70px;
+  background: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+}
+#center .btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+#center .left {
+  left: 15px;
+}
+#center .right {
+  right: 15px;
+}
+#list1 {
+  width: 110px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  margin-left: -44px;
+  padding: 2px 10px;
+}
+#list1 span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+#list1 span.active {
+  background: orangered;
+}
+#main-one-right {
+  width: 172px;
+  padding: 0 7px 0 7px;
+  float: right;
+  border-top: 1px solid #ccc;
+}
+#main-one-right > div {
+  width: 172px;
+  margin: 0 auto;
+}
+#main-one-right > div > img {
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: 45px auto;
+}
+#main-one-right > div > .p8 {
+  width: 100%;
+  padding: 0 0;
+  border-bottom: 1px dashed #ccc;
+  border-top: 1px dashed #ccc;
+}
+#main-one-right > div > .p8 > span {
+  display: block;
+}
+#main-one-right > div > .p8 > span > a {
+  color: #ccc;
+  font-size: 12px;
+}
+#main-one-right > div > .p9 {
+  width: 100%;
+}
+#main-one-right > div > .p9 > span {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+#box2 {
+  height: 145px;
+  float: left;
+  position: relative;
+}
+#box2 > ul {
+  width: 3600px;
+  height: 145px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#box2 li {
+  float: left;
+  width: 292px;
+  overflow: hidden;
+  margin-right: 8px;
+}
+#box2 li > img {
+  display: block;
+  width: 145px;
+  height: 145px;
+  float: left;
+}
+#box2 li > .div1 {
+  width: 125px;
+  float: left;
+  height: 107px;
+  padding: 10px 10px 5px 10px;
+}
+#box2 li > .div1 > .pp1 {
+  font-weight: 600;
+}
+#box2 li > .div1 > .pp2 {
+  padding: 5px 0;
+  border-bottom: 1px dashed #ccc;
+  border-top: 1px dashed #ccc ;
+  color: greenyellow;
+}
+#box2 li > .div1 > .pp3 {
+  padding: 10px 10px 10px 5px;
+}
+#box2 li > .div1 > .pp3 > .sp1 {
+  font-size: 16px;
+  color: red;
+  font-weight: 600;
+}
+#box2 li > .div1 > .pp3 > .sp2 {
+  font-size: 12px;
+  color: #ccc;
+  text-decoration: line-through;
+}
+#main-two {
+  margin-top: 30px;
+}
+#main-two > p {
+  width: 100%;
+}
+#main-two > ul {
+  width: 100%;
+  padding-top: 10px;
+  overflow: hidden;
+}
+#main-two > ul > li > a > img:hover {
+  transform: scale(1.1, 1.1);
+}
+#main-two > ul > li > a {
+  display: block;
+  overflow: hidden;
+}
+#main-two > ul > .li1 {
+  width: 240px;
+  float: left;
+}
+#main-two > ul > .li2 {
+  width: 384px;
+  float: left;
+}
+#main-two > ul > .li3 {
+  width: 384px;
+  float: left;
+  overflow: hidden;
+}
+#main-two > ul > .li3 > a {
+  display: block;
+  float: left;
+}
+#main-two > ul > .li4 {
+  width: 192px;
+  float: left;
+}
+.main-three {
+  margin-top: 20px;
+}
+.main-three .title {
+  overflow: hidden;
+}
+.main-three .title .pp5 {
+  float: left;
+}
+.main-three .title .pp5 .span7 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.main-three .title .pp4 {
+  float: right;
+}
+.main-three .title .pp4 > span {
+  padding: 0 5px;
+  border-right: 1px solid #000 ;
+}
+.main-three .main-three-top {
+  width: 100%;
+  height: 384px;
+  overflow: hidden;
+}
+.main-three .main-three-top > .div2 {
+  width: 240px ;
+  overflow: hidden;
+  float: left;
+}
+.main-three .main-three-top > .div2 > span {
+  padding: 10px ;
+  display: block;
+  float: left;
+}
+.main-three .main-three-top > .div2 > img:hover {
+  transform: scale(1.1, 1.1);
+}
+.main-three .main-three-top > .div11 {
+  width: 384px;
+  height: 384px;
+  float: left;
+  position: relative;
+}
+.main-three .main-three-top > .div11 > div > img {
+  display: block;
+  width: 384px;
+  height: 384px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-three .main-three-top > .div11 > .list10 {
+  width: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 142px;
+  z-index: 888;
+}
+.main-three .main-three-top > .div11 > .list10 > li {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-left: 5px;
+  border-radius: 50% ;
+  background: #fff;
+  text-align: center;
+  line-height: 15px;
+}
+.main-three .main-three-top > .div11 > .list10 .hover {
+  background: #FF4500;
+}
+.main-three .main-three-top > .div12 {
+  width: 384px;
+  height: 384px;
+  float: left;
+  position: relative;
+}
+.main-three .main-three-top > .div12 > div > img {
+  display: block;
+  width: 384px;
+  height: 384px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-three .main-three-top > .div12 > .list10 {
+  width: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 142px;
+  z-index: 888;
+}
+.main-three .main-three-top > .div12 > .list10 > li {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-left: 5px;
+  border-radius: 50% ;
+  background: #fff;
+  text-align: center;
+  line-height: 15px;
+}
+.main-three .main-three-top > .div12 > .list10 .hover {
+  background: #FF4500;
+}
+.main-three .main-three-top > .div13 {
+  width: 384px;
+  height: 384px;
+  float: left;
+  position: relative;
+}
+.main-three .main-three-top > .div13 > div > img {
+  display: block;
+  width: 384px;
+  height: 384px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-three .main-three-top > .div13 > .list10 {
+  width: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 142px;
+  z-index: 888;
+}
+.main-three .main-three-top > .div13 > .list10 > li {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-left: 5px;
+  border-radius: 50% ;
+  background: #fff;
+  text-align: center;
+  line-height: 15px;
+}
+.main-three .main-three-top > .div13 > .list10 .hover {
+  background: #FF4500;
+}
+.main-three .main-three-top > .div14 {
+  width: 384px;
+  height: 384px;
+  float: left;
+  position: relative;
+}
+.main-three .main-three-top > .div14 > div > img {
+  display: block;
+  width: 384px;
+  height: 384px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-three .main-three-top > .div14 > .list10 {
+  width: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 142px;
+  z-index: 888;
+}
+.main-three .main-three-top > .div14 > .list10 > li {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-left: 5px;
+  border-radius: 50% ;
+  background: #fff;
+  text-align: center;
+  line-height: 15px;
+}
+.main-three .main-three-top > .div14 > .list10 .hover {
+  background: #FF4500;
+}
+.main-three .main-three-top > .div15 {
+  width: 384px;
+  height: 384px;
+  float: left;
+  position: relative;
+}
+.main-three .main-three-top > .div15 > div > img {
+  display: block;
+  width: 384px;
+  height: 384px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-three .main-three-top > .div15 > .list10 {
+  width: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 142px;
+  z-index: 888;
+}
+.main-three .main-three-top > .div15 > .list10 > li {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-left: 5px;
+  border-radius: 50% ;
+  background: #fff;
+  text-align: center;
+  line-height: 15px;
+}
+.main-three .main-three-top > .div15 > .list10 .hover {
+  background: #FF4500;
+}
+.main-three .main-three-top > .div4 {
+  width: 576px;
+  float: left;
+  overflow: hidden;
+}
+.main-three .main-three-top > .div4 > ul > li {
+  width: 192px;
+  height: 192px;
+  float: left;
+  text-align: center;
+}
+.main-three .main-three-top > .div4 > ul > li > img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+.main-three .main-three-top > .div4 > ul > li > .pp6 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.main-three .main-three-top > .div4 > ul > li > .pp8 {
+  width: 100%;
+  overflow: hidden;
+}
+.main-three .main-three-top > .div4 > ul > li > .pp8 > .sp3 {
+  font-size: 15px;
+  color: red;
+}
+.main-three .main-three-top > .div4 > ul > li > .pp8 > .sp4 {
+  font-size: 13px;
+  margin-left: 20px;
+  text-decoration: line-through;
+  color: #ccc;
+}
+.main-three-main {
+  width: 100%;
+  overflow: hidden;
+}
+.main-three-main > a {
+  display: block;
+  width: 240px;
+  float: left;
+}
+.main-three-main > a > img {
+  display: block;
+  width: 240px;
+}
+.main-three-main > a > img:hover {
+  transform: scale(1.1, 1.1);
+}
+.main-three-bottom {
+  margin: 10px 0;
+  width: 100%;
+  overflow: hidden;
+}
+.main-three-bottom > a {
+  display: block;
+  width: 120px;
+  float: left;
+}
+.main-three-bottom > a > img {
+  display: block;
+  width: 120px;
+}
+.main-three-bottom > a > img:hover {
+  transform: scale(1.1, 1.1);
+}
+.main-three-foot {
+  width: 100%;
+}
+.main-three-foot > img {
+  display: block;
+  width: 100%;
+}
+.main-three-foot > img:hover {
+  transform: scale(1.1, 1.1);
+}
