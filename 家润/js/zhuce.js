@@ -144,14 +144,16 @@ obtn4.onfocus=function(){
 //	})
 //})
 //cookie做
-var user=document.getElementById("btn1");
-var pwd=document.getElementById("btn2");
+var user1=document.getElementById("btn1");
+var pwd1=document.getElementById("btn2");
 var btn5=document.getElementById("btn5");
 btn5.onclick=function(){
-	var date=btn1.value;
-	var pwd=getCookie(date)||getCookie('bucunzai');
+	var date1=user1.value;
+	var aaa=pwd1.value;
+	var pwd=getCookie(date1)||getCookie('bucunzai');
 	if(pwd=='bucunzai'){
-		setCookie(user.value,pwd.value,7);
+		
+		setCookie(date1,aaa,7);
 		open('denglu.html')
 	}else{
 		alert('用户已存在')

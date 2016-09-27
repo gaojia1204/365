@@ -119,6 +119,7 @@ btn4.onclick=function(){
 		alert('用户名不存在')
 	}else if(pwd==btn2.value){
 		alert('登录成功')
+		open("index.html")
 		
 	}else{
 		alert('密码错误')

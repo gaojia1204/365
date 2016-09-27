@@ -59,10 +59,8 @@ mean.sout();
 
 $str="";
 $.get("shuiguo.json",{},function(aaa){
-	console.log(aaa)
-	
 		for($attr in aaa){
-			$str+="<li><p class='pppp1'><a href="+aaa[$attr].src+"?c><img src="+aaa[$attr].imgsrc+"/></a></p><p class='pppp2'><a href="+aaa[$attr].src+"><img src="+aaa[$attr].imgsrc1+"/></a></p><span class='pir'>"+aaa[$attr].pir+"</span><span class='cont11'><a href="+aaa[$attr].src+">"+aaa[$attr].describe+"</a></span></li>"
+			$str+="<li><p class='pppp1'><a href="+aaa[$attr].src+"?c><img src="+aaa[$attr].imgsrc0+"/></a></p><p class='pppp2'><a href="+aaa[$attr].src+"><img src="+aaa[$attr].imgsrc1+"/></a></p><span class='pir'>"+aaa[$attr].pir+"</span><span class='cont11'><a href="+aaa[$attr].src+">"+aaa[$attr].describe+"</a></span></li>"
 		
 	}
 		$("#list3").append($str);	

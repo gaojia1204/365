@@ -116,26 +116,25 @@ $("#box2").hover(function(){
 	clearInterval(timer1)
 },function(){
 	var timer1=setInterval(function(){
-	$("#list2").animate({"left":"-1200px"},2000,function(){
-		$("#list2").animate({"left":"-2400"},2000,function(){
+	$("#list2").animate({"left":"-1200px"},5000)
+	$("#list2").animate({"left":"-2400"},5000,function(){
 			$("#list2").css({
 				"left":"0"
 			})
-		})
 	});
 	
-},5000)
+},10000)
 })
  var timer1=setInterval(function(){
-	$("#list2").animate({"left":"-1200px"},2000,function(){
-		$("#list2").animate({"left":"-2400"},4000,function(){
+	$("#list2").animate({"left":"-1200px"},5000,function(){
+		$("#list2").animate({"left":"-2400"},5000,function(){
 			$("#list2").css({
 				"left":"0"
 			})
 		})
 	});
 	
-},6000)
+},10000)
 //图片轮播-----------最后一个^-^
 lunbo(".div11","timer5","size1");
 lunbo(".div12","timer6","size2");
