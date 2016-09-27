@@ -55,7 +55,7 @@ var mean=new Mean();
 mean.smove();
 mean.sout();
 
-//获取数据打印页面
+//获取数据打印页面  固定格式
 		$str='<p class="ppppp1"><img src="img/step_spirit.png"/></p>'+
 			'<p class="ppppp2"><span>温馨提示</span>1.选购清单中的商品无法保留库存，请及时结算。2.商品的价格和库存将以订单提交时为准</p>'+
 			'<div class="div01">'+
@@ -81,10 +81,7 @@ mean.sout();
 			'</div>';
 		$("#main").html($str);	
 
-
-
-
-
+//查找cookie里S*的记录
 var arr1=[];
 for(var n=1;n<61;n++){
 	var arr=document.cookie.split('; ');
@@ -96,11 +93,11 @@ for(var n=1;n<61;n++){
 	}
 }
 
-var off=true;
 $str1="";
+//设置全局变量ddd
 var ddd=0;
 $.get("shuiguo.json",{},function(aaa){
-	
+	//循环arr1
 	for(var j=0;j<arr1.length;j++){
 		var cont=parseInt(getCookie(arr1[j]));
 		$ccc=arr1[j];	
@@ -111,6 +108,7 @@ $.get("shuiguo.json",{},function(aaa){
 		var ggg=jjj.replace(/"/g,"");
 		var hhh=parseFloat(ggg)
 		var sum=parseFloat((cont*hhh*100)/100);
+		sum=sum.toFixed(2);
 		ddd=parseFloat((ddd*100+sum*100))/100;
 		
 		$str1='<div class="div09"><div class="div03">'+
@@ -149,17 +147,20 @@ $("#main").on("click",".spa7",function(){
 	var pir111=$eee.data('pir');
 	var pir112=pir111.replace('￥','');
 	var pir113=parseFloat(pir112)
-	var sum=(pir113*100*cont)/100;
+	var sum=parseFloat(pir113*100*cont/100);
 	$hhh=$eee.parent();
+	//小计。。。。。
 	$hhh.children("#sum").html(sum);
 	setCookie(pir121,cont,7);
-	var sum1=(pir113*100*(cont-cont1))/100;
-	ddd=((ddd*100)+(sum1*100))/100;
+	var sum1=parseFloat(pir113)*100*(cont-cont1)/100;
+	ddd=(ddd*100+sum1*100)/100;
+	ddd=ddd.toFixed(2);
+	//总计。。。。。
 	if($(this).parent().parent().children(".div03").children(".xuan").prop('checked')){
-	$(".div02").parent().children('.div04').children('p').children('.spa9').children('#all').html(parseFloat(ddd));
+	allMoney(parseFloat(ddd))
 	}else{
 		$kkk=ddd-sum;
-		$(".div02").parent().children('.div04').children('p').children('.spa9').children('#all').html(parseFloat($kkk));
+		allMoney(parseFloat($kkk));
 	}
 })
 
@@ -177,17 +178,20 @@ $("#main").on("click",".spa5",function(){
 	var pir111=$eee.data('pir');
 	var pir112=pir111.replace('￥','');
 	var pir113=parseFloat(pir112)
-	var sum=parseFloat((pir113*100)*(cont*100)/10000);
+	var sum=parseFloat(pir113*100*cont/100);
 	$hhh=$eee.parent();
+	//小计。。。。。
 	$hhh.children("#sum").html(sum);
 	setCookie(pir121,cont,7);
-	var sum1=parseFloat((pir113*100)*((cont-cont1))*100/10000)
-	ddd=((ddd*100)+(sum1*100))/100;
+	var sum1=parseFloat(pir113*100*(cont-cont1))/100;
+	ddd=(ddd*100+sum1*100)/100;
+	ddd=ddd.toFixed(2);
+	//总计
 	if($(this).parent().parent().children(".div03").children(".xuan").prop('checked')){
-	$(".div02").parent().children('.div04').children('p').children('.spa9').children('#all').html(parseFloat(ddd));
+		allMoney(parseFloat(ddd));
 	}else{
 		$kkk=ddd-sum;
-		$(".div02").parent().children('.div04').children('p').children('.spa9').children('#all').html(parseFloat($kkk));
+		allMoney(parseFloat($kkk));
 	}
 })
 
@@ -224,16 +228,23 @@ $("#main").on("click",'.spa10',function(){
 $(".div02").on("change",".xuan",function(){
 	if($(this).prop('checked')){
 		$(this).prop('checked',true)
-		$sum=$(this).parent().parent().children('#sum').html();
+		$sum=$(this).parent().parent('.div09').children('#sum').html();
+		console.log($sum,ddd);
 		
+		ddd=ddd+parseFloat($sum);
 		
-		ddd=ddd+parseFloat($sum)
-		$(".div02").parent().children('.div04').children('p').children('.spa9').children('#all').html(ddd);
+		allMoney(ddd);
 	}else{
 		$(this).prop('checked',false)
-		$sum=$(this).parent().parent().children('#sum').html();
-		ddd=ddd-$sum
-		$(".div02").parent().children('.div04').children('p').children('.spa9').children('#all').html(ddd);
+		$sum=$(this).parent().parent('.div09').children('#sum').html();
+		console.log($sum,ddd)
+		ddd=ddd-parseFloat($sum);
+	
+		allMoney(ddd);
 		
 	}
 })
+
+function allMoney(data){
+	$(".div02").parent().children('.div04').children('p').children('.spa9').children('#all').html(data);
+}

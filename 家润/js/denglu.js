@@ -1,3 +1,4 @@
+//二级菜单
 function Mean(){
 	this.p4=document.getElementById("p4");
 	this.box1=document.getElementsByClassName("box1");

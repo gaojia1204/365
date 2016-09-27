@@ -6,6 +6,7 @@ function format(html,object){
 		return object[b] || "";
 	});
 }
+//地址栏查找？后字段
 function search(name){
 	var _search = (location.search+"").replace(/^\?/,"");
 	var arr = _search.split("&");
