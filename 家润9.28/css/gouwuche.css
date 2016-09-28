@@ -1,0 +1,118 @@
+#main {
+  width: 1100px;
+  margin: 0 auto;
+}
+#main > .ppppp1 {
+  width: 1000px;
+  margin: 20px auto;
+}
+#main > .ppppp2 {
+  text-align: right;
+  font-size: 12px;
+  margin-right: 50px;
+}
+#main > .ppppp2 > span {
+  color: red;
+}
+#main > .div01 {
+  border: 1px solid #ccc;
+  text-align: center;
+  background: #f0f0f0;
+}
+#main > .div01 > span {
+  display: inline-block;
+  padding: 8px 0;
+}
+#main > .div01 > .spa1 {
+  width: 440px;
+}
+#main > .div01 > .spa2 {
+  width: 127px;
+}
+#main > .div02 {
+  border: 1px solid #ccc;
+}
+#main > .div02 > .div09 {
+  overflow: hidden;
+  text-align: center;
+}
+#main > .div02 > .div09 > .div03 {
+  width: 440px;
+  overflow: hidden;
+  float: left;
+  padding: 10px 0;
+  height: 70px;
+}
+#main > .div02 > .div09 > .div03 > input {
+  float: left;
+  margin-left: 30px;
+}
+#main > .div02 > .div09 > .div03 > .spa3 {
+  float: left;
+  width: 47px;
+  height: 47px;
+  display: block;
+  border: 1px solid #ccc;
+  margin-left: 30px;
+}
+#main > .div02 > .div09 > .div03 > .spa3 > img {
+  display: block;
+  width: 47px;
+  height: 47px;
+}
+#main > .div02 > .div09 > .div03 > p {
+  float: left;
+  width: 302px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#main > .div02 > .div09 > .div03 > p > span {
+  display: block;
+}
+#main > .div02 > .div09 > .ppppp4 {
+  float: left;
+  width: 127px;
+  padding: 10px 0;
+  height: 70px;
+}
+#main > .div02 > .div09 > .ppppp4 > span {
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+#main > .div02 > .div09 > .ppppp4 > .spa5 {
+  width: 20px;
+}
+#main > .div02 > .div09 > .ppppp4 > .spa6 {
+  width: 30px;
+}
+#main > .div02 > .div09 > .ppppp4 > .spa7 {
+  width: 20px;
+}
+#main > .div04 > #spa8:hover {
+  color: red;
+}
+#main > .div04 > p {
+  text-align: right;
+}
+#main > .div04 > p > .spa9 {
+  color: red;
+}
+#main > .div05 {
+  text-align: right;
+}
+#main > .div05 > span {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 20px;
+}
+#main > .div05 > .spa10 {
+  background: #6DBC19;
+}
+#main > .div05 > .spa11 {
+  background: #FF4500;
+}
+/*# sourceMappingURL=gouwuche.css.map */
